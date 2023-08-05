@@ -1,0 +1,284 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  box-sizing: inherit;
+  font-family: inherit;
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: left 370px;
+  background-size: contain;
+  background-image: url('../images/sh2500.webp');
+  padding: 0 5%;
+}
+
+h1,
+h2,
+p {
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.quote {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-right: 0;
+  margin-top: 30px;
+}
+
+.headline {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-top: 115px;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  text-shadow: 3px 0px 7px rgba(32, 27, 8, 0.3), -3px 0px 7px rgba(27, 21, 4, 0.3), 0px 4px 7px rgba(21, 17, 3, 0.3);
+}
+
+.logo {
+  padding: 42px 0;
+  text-align: center;
+}
+
+.logo img {
+  background-color: black;
+}
+
+.btn-wrapper {
+  text-align: center;
+  width: 100%;
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+
+button {
+  outline: 0;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  padding: 10px 18px;
+  font-size: 1rem;
+  margin: 0 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.modal {
+  font-size: 14px;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 50px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal-content {
+  background-color: black;
+  margin: auto;
+  position: relative;
+  padding: 20px 20px 40px;
+  border: 1px solid #888;
+  width: 80%;
+  color: #eee;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.intro p {
+  color: #767676;
+  text-align: justify;
+}
+
+.intro-heading {
+  font-family: 'League Spartan', sans-serif;
+  color: #eee;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.intro-img {
+  width: 100%;
+  outline: 1px solid white;
+  border-radius: 20px;
+}
+
+.contact-modal .modal-content {
+  max-width: 500px;
+}
+
+.intro-logo {
+  position: absolute;
+  left: 10px;
+  background-color: black;
+  padding: 0 4px 0 8px;
+}
+
+input,
+textarea {
+  font-size: 1.125rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: #afafaf;
+  background-color: #282933;
+  padding: 14px 12px;
+  border: 0;
+  width: 100%;
+  margin: 0;
+  margin-top: 8px;
+  outline: 0;
+  border-radius: 4px;
+}
+
+label {
+  font-family: inherit;
+  margin-top: 7px;
+  display: block;
+  opacity: 0.5;
+}
+
+input[type='submit'] {
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background-color: #282933;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+.form-wrapper h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 440px) {
+  .wrapper {
+    background-size: 440px;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    display: flex;
+  }
+
+  .logo {
+    text-align: left;
+    display: inline-block;
+    padding: 54px 0;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .quote {
+    display: inline-block;
+    margin-top: 80px;
+    font-size: 2rem;
+  }
+
+  .headline {
+    font-size: 3rem;
+    line-height: 1.7;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper {
+    background-position: left 150px;
+    background-size: 90%;
+  }
+
+  .quote {
+    margin-right: 5%;
+    max-width: 500px;
+    margin-left: auto;
+  }
+
+  .btn-wrapper {
+    margin-top: 130px;
+  }
+
+  .intro-img {
+    max-width: 400px;
+    float: right;
+    margin-left: 10px;
+  }
+
+  .modal {
+    font-size: 1rem;
+  }
+
+  .modal-content {
+    padding: 40px;
+  }
+
+  .intro-logo {
+    bottom: -20px;
+  }
+
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
+
+  .flex>div {
+    flex: 1;
+  }
+}

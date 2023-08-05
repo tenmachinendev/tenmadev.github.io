@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGS</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Poppins&display=swap" rel="stylesheet" /> -->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="logo">
+            <img src="./assets/images/AGOT-logo.png" width="150" alt="AGOT-logo" />
+          </div>
+        </nav>
+        <div class="quote">
+          <p>
+            We never just dream <br />
+            of success <br />
+            <span class="bold">We work towards it.</span>
+          </p>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="content-wrapper">
+            <div class="content">
+              <h1 class="headline">
+                We are building a new aviation experience for you and for the future... <br />
+                keep watching this space.
+              </h1>
+            </div>
+          </div>
+          <div class="btn-wrapper">
+            <button data-modal="0" class="modal-btn">About us</button>
+            <button data-modal="1" class="modal-btn">Get in touch</button>
+          </div>
+        </section>
+      </main>
+      <div class="modal about-modal">
+        <div class="modal-content">
+          <span data-modal="0" class="close">&times;</span>
+          <div class="intro">
+            <h2 class="intro-heading">Introduction</h2>
+            <img class="intro-img" src="./assets/images/fastest_business_jets.jpg" alt="fastest_business_jets" />
+            <p>At AGOT Global Synergies, we are happy to share our revolutionary strategic proposition with you - a
+              game-changer for the wider aviation and aerospace industry that will transform how businesses operate and
+              thrive in today's competitive aviation and aerospace landscape.</p>
+
+            <p>AGOT Global Synergies is a dynamic team of experienced aviation professionals dedicated to providing
+              innovative strategies tailored to meet your needs and drive impactful results. We create solutions across
+              a wide range of aviation and aerospace sectors. At AGOT Global Synergies, solutions do not just come out
+              of a box, ready to plug and play. We pride ourselves on identifying your challenges and designing
+              strategies that are fit for purpose.</p>
+
+            <p>Our strategic proposition combines cutting-edge technology, data-driven insights, expert guidance, and
+              industry best practices to provide a viable and achievable roadmap for success. We help optimise
+              resources, streamline operations, and set you up for success by turning complexity into opportunity while
+              delivering measurable results. </p>
+
+            <p>Our core services include aviation project management and consulting, recruitment process outsourcing,
+              executive search, flight crew recruitment, flight operations auditing, flight operations solutions, flight
+              training auditing, VIP pre-travel flight operations safety and security auditing, regulatory compliance
+              solutions, aircraft sales and acquisition, flight crew career coaching.</p>
+
+            <p>We believe that a successful approach to achieving goals does not have to be mundane or conventional.
+              With our unique approach, we help companies and individuals to develop a clear vision, set achievable
+              goals, and formulate effective strategies to help drive growth and achieve success.</p>
+
+            <p>Experience the benefits of utilising industry expertise and tested knowledge along with the advantage
+              gained from a broader approach to tailoring the services and high-quality support vital for your success.
+              We take a collaborative approach to harness and combine all the resources available to ensure quality
+              outcomes. We know the landscape; We understand the industry.</p>
+
+            <p>Contact us today to schedule a consultation and discover how we can help you achieve your objectives.</p>
+            <div class="intro-logo">
+              <img src="./assets/images/AGOT-logo.png" width="150" alt="AGOT-logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal contact-modal">
+
+        <div class="modal-content">
+          <span data-modal="1" class="close">&times;</span>
+
+          <div class="form-wrapper">
+            <h2 style="font-style: none;">Inquiry Form</h2>
+            <p>We will get in touch with you shortly.</p>
+
+            <form action="https://formspree.io/f/xeqbewbj" method="POST">
+              <ul>
+                <h3>Your Name</h3>
+
+                <li class="flex">
+                  <div>
+                    <input type="text" id="first-name" name="First name" />
+                    <label for="first-name">First Name</label>
+                  </div>
+                  <div>
+                    <input type="text" id="last-name" name="Last name" />
+                    <label for="last-name">Last Name</label>
+                  </div>
+                </li>
+                <h3>Your E-mail Address</h3>
+                <li>
+                  <input type="email" id="email" placeholder="ex: myname@example.com" name="Email" />
+                  <label for="email">Email</label>
+                </li>
+                <h3>Leave Your Message</h3>
+                <li>
+                  <textarea name="Message" cols="30" rows="5"></textarea>
+                </li>
+                <li>
+                  <input type="submit" value="Submit" />
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+
+</html>
